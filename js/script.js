@@ -1,3 +1,5 @@
+// PRIMO ESERCIZIO
+
 //creo un array per la lista delle mail
 const email = ['filippo.rossi@gmail.com', 'luca.bianchi@gmail.com', 'franco.casale@yahoo.it', 'giuseppe.berlusconi@hotmail.com', 'leonardo.catalfamo@gmail.com'];
 //dichiaro la variabile dove l'utente inserisce la sua email
@@ -19,4 +21,23 @@ if (checkEmail === true) {
 }
 else {
     console.log('email errata')
+}
+
+//SECONDO ESERCIZIO
+//creo le costanti che generano un numero casuale
+const userNumber = Math.floor(Math.random() * 6) + 1;
+console.log(userNumber)
+const pcNumber = Math.floor(Math.random() * 6) + 1;
+console.log(pcNumber)
+//qua stiamo dicendo che se il numero generato dal "pc" è minore del "nostro" allora abbiamo vinto
+if(userNumber>pcNumber){
+    console.log('Hai Vinto! :)')
+}
+//qua stiamo dicendo che se i numeri generati si equivalgono all'ora è una situazione di pareggio
+else if(userNumber==pcNumber){
+    console.log('Pareggio')
+}
+//altrimenti se nessuna delle due opzioni sopra si avverano di conseguenza il numero generato è minore rispetto a quello del "pc" e quindi abbiamo perso
+else{
+    console.log('Hai Perso! :(')
 }
