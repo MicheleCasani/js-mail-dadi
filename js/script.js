@@ -6,12 +6,17 @@ let user = prompt('inserisci la tue email');
 
 let checkEmail = false
 
-for (i = 0; !checkEmail && i < email.length; i++){
-    if (email[i] === user){
-       console.log(checkEmail = true)
+for (i = 0; !checkEmail && i < email.length; i++) {
+    if (email[i] === user) {
+        checkEmail = true;
     }
 
-    else{
-        console.log(checkEmail = false)
-    }
+
+}
+
+if (checkEmail === true) {
+    console.log('email corretta')
+}
+else {
+    console.log('email errata')
 }
